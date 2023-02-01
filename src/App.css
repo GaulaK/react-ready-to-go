@@ -1,38 +1,158 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* --------- HEADER --------- */
+
+header {
+  height: 115px;
+  width: 100%;
+  border-bottom: solid 1px #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header > div {
+  margin-left: 111px;
+}
+header img {
+  width: 70px;
+}
+
+header h1 {
+  margin-left: 65px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+/* --------- FOOTER --------- */
+footer {
+  height: 115px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer span {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  width: 100%;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin-top: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+/* --------- BUTTON --------- */
+/* --------- BUTTON --------- */
+/* --------- BUTTON --------- */
+
+.switch {
+  display: flex;
+  gap: 71px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.switch button {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+
+  width: 120px;
+  height: 70px;
+  cursor: pointer;
+  border: solid 1px #e5e5e5;
+  border-radius: 6px;
+}
+
+.switch .selected {
+  background-color: #5c48d3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.switch .not-selected {
+  background-color: white;
+  color: #5c48d3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* --------- RESET --------- */
+
+.reset {
+  margin-top: 10px;
+  padding: 20px 10px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  border: solid 1px #e5e5e5;
+  border-radius: 6px;
+
+  background-color: #d34848;
+}
+/* --------- RESULT --------- */
+/* --------- RESULT --------- */
+/* --------- RESULT --------- */
+
+.spaceship {
+  width: 250px;
+  height: 145.83px;
+
+  border: 1px solid #908f8f;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.authorized {
+  background-color: #46ac4a;
+}
+
+.forbidden {
+  background-color: #d34848;
+}
+
+/* --------- MEDIA --------- */
+/* --------- MEDIA --------- */
+/* --------- MEDIA --------- */
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-around;
   }
-  to {
-    transform: rotate(360deg);
+
+  header h1 {
+    display: none;
+  }
+
+  header > div {
+    margin-left: 0;
+  }
+  .container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 }
